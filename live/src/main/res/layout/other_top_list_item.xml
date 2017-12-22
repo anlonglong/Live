@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="102dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/top_list_item"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:progressBarAutoRotateInterval="1500"
+            app:failureImageScaleType="center"
+            app:progressBarImageScaleType="center"
+            app:failureImage="@drawable/icon_image_fialure"
+            app:placeholderImage="@color/grey"
+            app:progressBarImage="@drawable/icon_progresss"
+            app:roundAsCircle="true"
+            />
+
+        <TextView
+            android:id="@+id/top_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="mingzi "
+            android:textSize="10sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_list_item"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

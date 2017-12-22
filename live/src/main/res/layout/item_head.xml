@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="50dp">
+    <com.allen.library.SuperTextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/stv_title_info"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sLeftTextString="最热"
+        app:sRightTextString="更多"
+        android:gravity="center"
+        app:sLeftTextColor="@android:color/black"
+        app:sLeftTextSize="13sp"
+        app:sRightTextColor="#b4afb1"
+        app:sRightTextSize="12sp"
+        app:sLeftViewMarginLeft="2dp"
+        app:sRightViewMarginRight="2dp"
+        app:sLeftIconMarginLeft="3dp"
+        app:sRightIconMarginRight="3dp"
+        app:sLeftIconRes="@drawable/reco_game_txt_icon"
+        app:sRightIconRes="@drawable/icon_right_arrow_gray"/>
+</LinearLayout>

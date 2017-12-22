@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorNavigationBg">#40ffdf</color>
+    <color name="colorStatueBar">#de6d10</color>
+    <color name="grey">#44aaaaaa</color>
+    <color name="banner_holder">#c6c6c6</color>
+    <color name="loading_bg">#dad1d1</color>
+    <color name="light_greying">#4a4747</color>
+</resources>

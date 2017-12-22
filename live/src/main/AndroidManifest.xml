@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cyou.bike.com.live">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".application.LiveApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:configChanges="orientation|keyboardHidden"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".module.splash.SplashActivity"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".module.main.MainActivity"/>
+        <activity
+            android:name=".module.guide.GuideActivity"
+            android:theme="@style/FullScreen"/>
+        <activity
+            android:name=".struct.MainActivity"
+            android:label="@string/title_activity_main">
+        </activity>
+        <!--用电脑直播,必须横屏-->
+        <activity android:name=".module.live.cellphonelive.CellPhoneLiveActivity"
+                  android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+                  android:launchMode="singleTop"
+                  android:theme="@style/Theme.AppCompat.NoActionBar"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity android:name=".module.main.home.activity.MoreActivity"/>
+    </application>
+
+</manifest>

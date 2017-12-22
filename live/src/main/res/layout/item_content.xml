@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="120dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/hot_item_img"
+                app:progressBarImage="@drawable/icon_progresss"
+                app:failureImage="@drawable/icon_image_fialure"
+                app:failureImageScaleType="center"
+                app:progressBarAutoRotateInterval="1500"
+                app:progressBarImageScaleType="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:actualImageScaleType="centerCrop"
+                app:placeholderImage="@drawable/placeholder_topic_has_no_message"
+                app:roundBottomLeft="true"
+                app:retryImage="@drawable/placeholder_save_data_image"
+                app:roundBottomRight="true"
+                app:roundTopLeft="true"
+                app:viewAspectRatio="2"
+                app:roundTopRight="true"
+                app:roundedCornerRadius="7dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_live"
+                android:layout_width="60dp"
+                android:layout_height="18dp"
+                android:background="@drawable/search_header_live_type_pc"
+                />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/online_people_count"
+                android:layout_width="50dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                app:sShapeSelectorNormalColor="@color/light_greying"
+                app:sCenterTextColor="@android:color/white"
+                app:sCenterTextGravity="center"
+                app:sCenterTextSize="8sp"
+                app:sCenterLines="1"
+                app:sCenterTvDrawableLeft="@drawable/home_reco_online_num_icon"
+                app:sCenterViewGravity="center"
+                app:sTextViewDrawablePadding="2dp"
+                app:sShapeCornersBottomLeftRadius="7dp"
+                app:sShapeCornersBottomRightRadius="7dp"
+                app:sShapeCornersTopLeftRadius="7dp"
+                app:sShapeCornersTopRightRadius="7dp"
+                app:sUseShape="true"
+                />
+
+            <TextView
+                android:id="@+id/live_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:drawablePadding="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/home_reco_host_name_icon"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/live_rome_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</LinearLayout>

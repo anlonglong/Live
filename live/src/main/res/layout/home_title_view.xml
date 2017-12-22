@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/colorStatueBar"
+    android:contentDescription="@string/no_desc"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/no_desc"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_icon"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/no_desc"
+        android:src="@drawable/search_src_selector"/>
+
+    <ImageView
+        android:id="@+id/scan"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/search"
+        android:contentDescription="@string/no_desc"
+        android:src="@drawable/scan_src_seletor"/>
+
+    <ImageView
+        android:id="@+id/history"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/scan"
+        android:contentDescription="@string/no_desc"
+        android:src="@drawable/history_src_seletor"/>
+
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/history"
+        android:contentDescription="@string/no_desc"
+        android:src="@drawable/message_src_seletor"/>
+
+</RelativeLayout>
