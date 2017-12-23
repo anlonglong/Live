@@ -22,7 +22,7 @@ import cyou.bike.com.live.module.main.follow.FollowFragment;
 import cyou.bike.com.live.module.main.home.fragment.HomeFragment;
 import cyou.bike.com.live.module.main.live.fragment.LiveFragment;
 import cyou.bike.com.live.module.main.my.MyFragment;
-import cyou.bike.com.live.module.main.video.VideoFragment;
+import cyou.bike.com.live.module.main.video.fragment.VideoFragment;
 import cyou.bike.com.live.utils.LogUtil;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationBar.OnTabSelectedListener {

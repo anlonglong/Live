@@ -251,7 +251,7 @@ public class RequestWrapper extends DYRequest {
         @Override
         public void handleMessage(Message msg) {
             DYHttpRequest.Result result = (DYHttpRequest.Result) msg.obj;
-            switch (HttpListener.HttpState.state(String.valueOf(msg.what))) {
+            switch (HttpListener.HttpState.get(msg.what)) {
                 case HTTPSUCCESS:
                     try {
                         mListener.onResponse(result.getCall(), result.getResponse(), (BaseHttpOutput) result.getData());
