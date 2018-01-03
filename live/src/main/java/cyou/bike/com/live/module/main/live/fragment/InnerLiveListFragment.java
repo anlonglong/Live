@@ -62,6 +62,7 @@ public class InnerLiveListFragment extends BaseFragment<InnerPresenter> implemen
         commonNavigator.setAdapter(new InnerAdapter(datas,mLiveListViewPager));
         mLiveListIndictor.setNavigator(commonNavigator);
         ViewPagerHelper.bind(mLiveListIndictor,mLiveListViewPager);
+        mLiveListViewPager.setOffscreenPageLimit(datas.size());
         mLiveListViewPager.setAdapter(new FragmentStatePagerAdapter(getChildFragmentManager()) {
             @Override
             public Fragment getItem(int position) {

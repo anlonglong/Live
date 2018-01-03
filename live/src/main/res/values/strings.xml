@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
     <string name="app_name">Live</string>
     <string name="no_desc">无描述</string>
     <string name="enter_main">进入应用</string>
@@ -7,4 +7,10 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="loading_percent">视频已加载{0}%%...</string>
+    <string name="number">
+        <xliff:g id="count">%01$.1f</xliff:g>万
+    </string>
+    <string name="follow">
+       视频数: <xliff:g id="follow">%01$s</xliff:g> \t\t\t  订阅数: <xliff:g id="subscription">%02$d</xliff:g>
+    </string>
 </resources>

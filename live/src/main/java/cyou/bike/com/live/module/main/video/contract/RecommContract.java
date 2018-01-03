@@ -21,9 +21,9 @@ public interface RecommContract {
     }
 
     interface View extends BaseView <Presenter>{
-        void onGetHotVideoList1(List<HotVideoList.DataBean> datas);
-        void onGetCateHotVideoList1(List<CateHotVideoList.DataBean> datas);
-        void onGetHotAuthors(List<HotAuthors.DataBean> datas);
+        void onGetHotVideoList1(List<HotVideoList.DataBean> datas,HotVideoList hotVideoList);
+        void onGetCateHotVideoList1(List<CateHotVideoList.DataBean> datas,CateHotVideoList cateHotVideoList);
+        void onGetHotAuthors(List<HotAuthors.DataBean> datas,HotAuthors hotAuthors);
     }
 
     interface Module extends BaseModule<View> {

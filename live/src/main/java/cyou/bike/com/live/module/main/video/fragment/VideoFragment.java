@@ -16,11 +16,8 @@ import java.util.List;
 import butterknife.BindView;
 import cyou.bike.com.live.R;
 import cyou.bike.com.live.base.BaseFragment;
-import cyou.bike.com.live.module.main.live.adapter.ColumnListIndicatior;
+import cyou.bike.com.live.module.main.live.fragment.InnerLiveListFragment;
 import cyou.bike.com.live.module.main.video.adapter.VideoHomeCateIndicatior;
-import cyou.bike.com.live.module.main.video.bean.CateHotVideoList;
-import cyou.bike.com.live.module.main.video.bean.HotAuthors;
-import cyou.bike.com.live.module.main.video.bean.HotVideoList;
 import cyou.bike.com.live.module.main.video.bean.VideoHomeCate;
 import cyou.bike.com.live.module.main.video.contract.VideoContract;
 import cyou.bike.com.live.module.main.video.presenter.VideoPresenter;
@@ -53,12 +50,11 @@ public class VideoFragment extends BaseFragment<VideoPresenter> implements Video
             mPresenter.attach(this);
             mPresenter.getVideoHomeCate1();
         }
-
     }
 
     @Override
     protected int getContentLayoutId() {
-        return R.layout.vodeo_fragment_layout;
+        return R.layout.video_fragment_layout;
     }
 
     @Override
@@ -93,10 +89,14 @@ public class VideoFragment extends BaseFragment<VideoPresenter> implements Video
         commonNavigator.setAdapter(new VideoHomeCateIndicatior(datas, mVideoViewPager));
         mVideoIndicator.setNavigator(commonNavigator);
         ViewPagerHelper.bind(mVideoIndicator, mVideoViewPager);
+        mVideoViewPager.setOffscreenPageLimit(datas.size());
         mVideoViewPager.setAdapter(new FragmentStatePagerAdapter(getChildFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                return RecommendFragment.newInstance();
+                if (0==position){
+                    return VideoRecommendFragment. newInstance();
+                }
+                return VideoInnerFragment.newInstance(datas.get(position).getCid1());
             }
 
             @Override

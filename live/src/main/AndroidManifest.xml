@@ -4,15 +4,15 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:name=".application.LiveApplication"
         android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:configChanges="orientation|keyboardHidden"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -33,14 +33,18 @@
             android:name=".struct.MainActivity"
             android:label="@string/title_activity_main">
         </activity>
-        <!--用电脑直播,必须横屏-->
-        <activity android:name=".module.live.cellphonelive.CellPhoneLiveActivity"
-                  android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
-                  android:launchMode="singleTop"
-                  android:theme="@style/Theme.AppCompat.NoActionBar"
-                  android:windowSoftInputMode="stateAlwaysHidden">
+        <!-- 用电脑直播,必须横屏 -->
+        <activity
+            android:name=".module.videocontroller.cellphonelive.CellPhoneLiveActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
         <activity android:name=".module.main.home.activity.MoreActivity"/>
+        <activity android:name=".module.main.video.activity.WebActivity">
+        </activity>
+        <activity android:name=".module.main.video.activity.AuthorListActivity"/>
     </application>
 
 </manifest>

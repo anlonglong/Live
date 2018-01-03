@@ -55,7 +55,7 @@ public class RecommModule implements RecommContract.Module  {
             @Override
             public void onResponse(Call call, Response response, HotVideoList data) throws IOException {
                 if (data.getError() == 0) {
-                    listener.onGetHotVideoList1Listener(data.getData());
+                    listener.onGetHotVideoList1Listener(data.getData(),data);
                 }
             }
         });
@@ -77,7 +77,7 @@ public class RecommModule implements RecommContract.Module  {
             @Override
             public void onResponse(Call call, Response response, CateHotVideoList data) throws IOException {
                 if (data.getError() == 0) {
-                    listener.onGetCateHotVideoList1Listener(data.getData());
+                    listener.onGetCateHotVideoList1Listener(data.getData(),data);
                 }
             }
         });
@@ -99,7 +99,7 @@ public class RecommModule implements RecommContract.Module  {
             @Override
             public void onResponse(Call call, Response response, HotAuthors data) throws IOException {
                 if (data.getError() == 0) {
-                    listener.onGetHotAuthorsListener(data.getData());
+                    listener.onGetHotAuthorsListener(data.getData(),data);
                 }
             }
         });

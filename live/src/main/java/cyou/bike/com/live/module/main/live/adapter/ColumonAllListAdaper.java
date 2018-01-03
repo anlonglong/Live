@@ -5,12 +5,11 @@ import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.vondear.rxtools.module.wechat.pay.MD5;
 
 import java.util.List;
 
 import cyou.bike.com.live.R;
-import cyou.bike.com.live.module.live.cellphonelive.CellPhoneLiveActivity;
+import cyou.bike.com.live.module.videocontroller.cellphonelive.CellPhoneLiveActivity;
 import cyou.bike.com.live.module.main.home.adapter.BindValueHelper;
 import cyou.bike.com.live.module.main.live.bean.ColumonListBean;
 

@@ -12,7 +12,6 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import cyou.bike.com.live.R;
-import cyou.bike.com.live.module.live.cellphonelive.CellPhoneLiveActivity;
 
 /**
  * Created by：anlonglong
@@ -57,6 +56,25 @@ public class BindValueHelper {
 
     public void setOnItemClickListener(OnItemClickListener listener) {
      this.mListener =listener;
+    }
+    String coverSrc;
+    String repo;
+    String title;
+    String name;
+    String number;
+    public void binderVideoValue(String coverSrc, String repo, String titile, String name, String number, final String hashId) {
+        setLiveImageBg(R.id.video_item_img, coverSrc);
+        setText(R.id.video_people_count,repo);
+        setText(R.id.live_rome_name,titile);
+        setText(R.id.video_name,name);
+        setText(R.id.live_play_time,number);
+        mItemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mListener != null)
+                mListener.click(mItemView.getContext(),hashId,false);
+            }
+        });
     }
 
     public void  bindValue(String imageUrl, boolean liveing, boolean isFromFaceValue, String onLinePeople, String liveName, String roomName, String roomId) {
@@ -105,6 +123,12 @@ public class BindValueHelper {
         TextView name = bindView(id);
         name.setText(liveName);
     }
+
+    public void setText(@IdRes int id, String text) {
+        TextView name = bindView(id);
+        name.setText(text);
+    }
+
 
     @SuppressWarnings("unchecked")//作用:去掉一些让人看着不舒服的下划线
     private <T extends View> T bindView(@IdRes int id) {

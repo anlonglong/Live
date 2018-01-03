@@ -57,8 +57,8 @@ public class RecommPresenter implements RecommContract.Presenter {
     public void getHotVideoList1() {
         getModule().getHotVideoList1(new VideoResponseListener.HotVideoList1Listener() {
             @Override
-            public void onGetHotVideoList1Listener(List<HotVideoList.DataBean> datas) {
-                mView.onGetHotVideoList1(datas);
+            public void onGetHotVideoList1Listener(List<HotVideoList.DataBean> datas,HotVideoList hotVideoList) {
+                mView.onGetHotVideoList1(datas,hotVideoList);
             }
 
             @Override
@@ -72,8 +72,8 @@ public class RecommPresenter implements RecommContract.Presenter {
     public void getCateHotVideoList1() {
         getModule().getCateHotVideoList1(new VideoResponseListener.CateHotVideoList1Listener() {
             @Override
-            public void onGetCateHotVideoList1Listener(List<CateHotVideoList.DataBean> datas) {
-                mView.onGetCateHotVideoList1(datas);
+            public void onGetCateHotVideoList1Listener(List<CateHotVideoList.DataBean> datas,CateHotVideoList cateHotVideoList) {
+                mView.onGetCateHotVideoList1(datas,cateHotVideoList);
             }
 
             @Override
@@ -87,8 +87,8 @@ public class RecommPresenter implements RecommContract.Presenter {
     public void getHotAuthors() {
         getModule().getHotAuthors(new VideoResponseListener.HotAuthorsListener() {
             @Override
-            public void onGetHotAuthorsListener(List<HotAuthors.DataBean> datas) {
-                mView.onGetHotAuthors(datas);
+            public void onGetHotAuthorsListener(List<HotAuthors.DataBean> datas,HotAuthors hotAuthors) {
+                mView.onGetHotAuthors(datas,hotAuthors);
             }
 
             @Override

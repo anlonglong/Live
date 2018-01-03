@@ -1,24 +1,15 @@
 package cyou.bike.com.live.module.main.home.adapter;
 
-import android.content.ClipData;
 import android.content.Context;
-import android.support.annotation.IdRes;
-import android.support.design.widget.Snackbar;
-import android.util.SparseArray;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.allen.library.SuperTextView;
 import com.chad.library.adapter.base.BaseSectionQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.facebook.drawee.view.SimpleDraweeView;
-import com.vondear.rxtools.view.RxToast;
 
 import java.util.List;
 
 import cyou.bike.com.live.R;
-import cyou.bike.com.live.module.live.cellphonelive.CellPhoneLiveActivity;
+import cyou.bike.com.live.module.videocontroller.cellphonelive.CellPhoneLiveActivity;
 import cyou.bike.com.live.module.main.home.activity.MoreActivity;
 import cyou.bike.com.live.module.main.home.bean.HotCateBean;
 import cyou.bike.com.live.module.main.home.bean.OtherSection;

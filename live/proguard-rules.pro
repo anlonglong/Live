@@ -43,3 +43,10 @@
 -keepclassmembers  class **$** extends com.chad.library.adapter.base.BaseViewHolder {
      <init>(...);
 }
+
+-keep public class * extends android.webkit.WebChromeClient
+-keep class com.just.library.** {
+    *;
+}
+-dontwarn com.just.library.**
+-keepclassmembers class com.just.library.agentweb.AndroidInterface{ *; }

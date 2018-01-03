@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cyou.bike.com.live.module.live.cellphonelive.CellPhoneLiveActivity">
+    tools:context="cyou.bike.com.live.module.videocontroller.cellphonelive.CellPhoneLiveActivity">
     <!--视频图层-->
     <io.vov.vitamio.widget.VideoView
         android:id="@+id/video_view"

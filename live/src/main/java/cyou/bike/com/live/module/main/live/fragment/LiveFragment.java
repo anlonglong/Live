@@ -91,6 +91,7 @@ public class LiveFragment extends BaseFragment<LiveListPresenter> implements Liv
         commonNavigator.setAdapter(new ColumnListIndicatior(columList, mLiveViewpager));
         mLiveIndication.setNavigator(commonNavigator);
         ViewPagerHelper.bind(mLiveIndication, mLiveViewpager);
+        mLiveViewpager.setOffscreenPageLimit(columList.size());
         mLiveViewpager.setAdapter(new FragmentStatePagerAdapter(getChildFragmentManager()) {
             @Override
             public Fragment getItem(int position) {

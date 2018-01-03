@@ -9,7 +9,7 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import java.util.List;
 
 import cyou.bike.com.live.R;
-import cyou.bike.com.live.module.live.cellphonelive.CellPhoneLiveActivity;
+import cyou.bike.com.live.module.videocontroller.cellphonelive.CellPhoneLiveActivity;
 import cyou.bike.com.live.module.main.home.bean.ThreeCateData;
 
 /**

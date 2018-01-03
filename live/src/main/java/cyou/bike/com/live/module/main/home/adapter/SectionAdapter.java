@@ -15,7 +15,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import java.util.List;
 
 import cyou.bike.com.live.R;
-import cyou.bike.com.live.module.live.cellphonelive.CellPhoneLiveActivity;
+import cyou.bike.com.live.module.videocontroller.cellphonelive.CellPhoneLiveActivity;
 import cyou.bike.com.live.module.main.home.activity.MoreActivity;
 import cyou.bike.com.live.module.main.home.bean.DigDataRoomBean;
 import cyou.bike.com.live.module.main.home.bean.FaceScoreBean;

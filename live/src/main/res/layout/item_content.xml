@@ -38,7 +38,7 @@
                 android:id="@+id/iv_live"
                 android:layout_width="60dp"
                 android:layout_height="18dp"
-                android:background="@drawable/search_header_live_type_pc"
+                android:background="@drawable/icon_replay"
                 />
 
             <com.allen.library.SuperTextView

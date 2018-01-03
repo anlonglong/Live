@@ -29,12 +29,6 @@ public interface HttpListener<T extends BaseHttpOutput> {
             return code;
         }
 
-
-        /**
-         *
-         * @param ste 把字符串state转换成对应烦人枚举
-         * @return
-         */
         public static HttpState state(String ste) {
             HttpState state = null;
             try {
@@ -45,16 +39,10 @@ public interface HttpListener<T extends BaseHttpOutput> {
             return state;
         }
 
-
-        /**
-         * 根据code获取对应的枚举常量
-         * @param ste
-         * @return
-         */
-        public static HttpState get(int ste) {
-           if (ste ==HTTPSUCCESS.code) return HTTPSUCCESS;
-           if (ste == HTTPFAIL.code ) return HTTPFAIL;
-           return null;
+        public static HttpState get(int ste)  {
+           if (ste == HTTPSUCCESS.code) return HTTPSUCCESS;
+           if (ste == HTTPFAIL.code) return HTTPFAIL;
+             return null;
         }
 
     }

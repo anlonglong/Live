@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/auth_list_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="19dp"
+        app:failureImage="@drawable/icon_image_fialure"
+        app:failureImageScaleType="center"
+        app:placeholderImage="@color/grey"
+        app:progressBarAutoRotateInterval="1500"
+        app:progressBarImage="@drawable/icon_progresss"
+        app:progressBarImageScaleType="center"
+        app:roundAsCircle="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:text="ssssssssss"/>
+
+        <TextView
+            android:id="@+id/follow_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/nickname"
+            android:layout_below="@id/nickname"
+            android:layout_marginTop="5dp"
+            tools:text="aaaaaaaaaaaaaaaaaaaa"/>
+    </RelativeLayout>
+</LinearLayout>

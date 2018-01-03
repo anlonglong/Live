@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
                 .initialise();
         mManager = getSupportFragmentManager();
         mManager.beginTransaction().replace(R.id.fragment_container, HomeFragment.newInstance()).commit();
-        //ViewPager+FragmentStatePagerAdapter 报错Fragment already added: RecommendFragment{47f7127 #0 id=0x7f10015c}  很大程度上是布局发问题,可以先设置一个TextView看一看布局是否有问题
+        //ViewPager+FragmentStatePagerAdapter 报错Fragment already added: VideoRecommendFragment{47f7127 #0 id=0x7f10015c}  很大程度上是布局发问题,可以先设置一个TextView看一看布局是否有问题
     }
 
     @Override

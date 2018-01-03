@@ -26,19 +26,19 @@ public interface VideoResponseListener<T> {
 
     interface HotVideoList1Listener {
 
-        void onGetHotVideoList1Listener(List<HotVideoList.DataBean> datas);
+        void onGetHotVideoList1Listener(List<HotVideoList.DataBean> datas,HotVideoList hotVideoList);
         void onFail(String msg);
     }
 
     interface CateHotVideoList1Listener {
 
-        void onGetCateHotVideoList1Listener(List<CateHotVideoList.DataBean> datas);
+        void onGetCateHotVideoList1Listener(List<CateHotVideoList.DataBean> datas,CateHotVideoList cateHotVideoList);
         void onFail(String msg);
     }
 
     interface HotAuthorsListener {
 
-        void onGetHotAuthorsListener(List<HotAuthors.DataBean> datas);
+        void onGetHotAuthorsListener(List<HotAuthors.DataBean> datas,HotAuthors hotAuthors);
         void onFail(String msg);
     }
 
